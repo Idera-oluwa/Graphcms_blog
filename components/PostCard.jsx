@@ -14,8 +14,8 @@ function PostCard({post}) {
                 >
                 <Link href={`/post/${post.slug}`}>{post.title}</Link>
                 </h1>
-                <div className='block lg:flex text-center items-center justify-center mb-8 w-full'>
-                <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
+                <div className='block lg:flex text-center items-center justify-center mb-4 md:mb-8 w-full'>
+                <div className='flex items-center justify-center md:mb-4 mb-2 lg:mb-0 w-full lg:w-auto mr-8'>
                   <img alt={post.authur.name}
                   className='align-middle h-10 w-10 rounded-full' src={post.authur.photo.url}
                   />
