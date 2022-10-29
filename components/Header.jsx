@@ -10,7 +10,7 @@ useEffect(() => {
 }, [])
 
     return (
-        <div className='container mx-auto flex px-10 mb-8 items-center'>
+        <div className='container mx-auto flex md-px-10 px-5 mb-8 items-center'>
             <div className='border-b w-full inline-block border-blue-100 py-8'>
             <div className='flex flex-row align-center'>
           <div className='md:float-left block'>
