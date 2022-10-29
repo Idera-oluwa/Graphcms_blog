@@ -21,8 +21,10 @@ const PostDetail = ({post}) => {
     
         switch (type) {
             case 'heading-one':
-            return <h3 key={index} className="text-3xl font-bold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
-          case 'heading-three':
+            return <h1 key={index} className="text-3xl text-center font-bold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h1>;
+            case 'heading-two':
+            return <h2 key={index} className="text-2xl text-center font-bold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h2>;
+            case 'heading-three':
             return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
           case 'paragraph':
             return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
@@ -30,7 +32,7 @@ const PostDetail = ({post}) => {
             return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
           case 'image':
             return (
-              <img className='w-full h-[10cm] lg:h-[15cm]'
+              <img className='w-full h-[9cm] lg:h-[15cm]'
                 key={index}
                 alt={obj.title}
                 height={obj.height}
