@@ -19,7 +19,7 @@ function PostCard({post}) {
                   <img alt={post.authur.name}
                   className='align-middle h-10 w-10 rounded-full' src={post.authur.photo.url}
                   />
-                  <p className='inline align-middle text-gray-700 ml-2 text-[0.5cm]  md:text-lg'>{post.authur.name}</p>
+                  <p className='inline align-middle text-gray-700 ml-2 text-[0.5cm] md:text-lg'>{post.authur.name}</p>
                 </div>
                 <div className='font-medium text-gray-700'>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +32,7 @@ function PostCard({post}) {
         <div className='text-center'>
         <Link href={`/post/${post.slug}`}>
         <span className='transition duration-500 transform hover:-translate-y-1 
-        inline-block bg-pink-600 cursor-pointer text-lg font-medium rounded-full text-white px-8 py-3
+        inline-block bg-pink-600 cursor-pointer text-[0.45cm] md:text-lg font-medium rounded-full text-white md:px-8 px-4 md:py-3 py-2
         '>Continue Reading</span>
         </Link>
         </div>
