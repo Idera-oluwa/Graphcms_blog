@@ -30,9 +30,13 @@ const PostDetail = ({post}) => {
             return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
           case 'heading-four':
             return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
-          case 'image':
+            case 'heading-five':
+            return <h5 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h5>;
+            case 'heading-six':
+            return <h6 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h6>;
+            case 'image':
             return (
-              <img className='w-full h-[9cm] lg:h-[15cm]'
+              <img className='w-full h-[9cm] lg:h-[11cm]'
                 key={index}
                 alt={obj.title}
                 height={obj.height}
@@ -46,7 +50,7 @@ const PostDetail = ({post}) => {
       };
     
     return (
-        <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
+        <div className='bg-white break-all shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
             <div className='relative overflow-hidden shadow-md mb-6'>
               <img
               src={post.featuredImage.url}
