@@ -25,8 +25,8 @@ const Sidebar = ({show,hideSidebar}) =>{
       onClick={hideSidebar}
       className='float-right md:hidden block align-middle text-red-800 ml-auto font-semibold text-4xl cursor-pointer drop-shadow-lg'/>
       </div>
-      <h1 className='text-white text-4xl mt-[1cm] mb-[0.5cm] font-bold text-center'>Categories</h1>
-      <div className= 'flex flex-col'>
+      {/*<h1 className='text-white text-4xl mt-[1cm] mb-[0.5cm] font-bold text-center'>Categories</h1>*/}
+      <div className= 'flex flex-col mt-[1cm]'>
            {categories.map((category)=>{
              return(
                  <Link key={category.slug} href={`/category/${category.slug}`}>
